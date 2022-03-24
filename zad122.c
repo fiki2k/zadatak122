@@ -33,7 +33,7 @@ int main()
         }
 
     /*
-     Provjer je li matrica gornje trokutasta
+     Provjera je li matrica gornje trokutasta
      */
     gornje = 1;
     for(redak=0; redak<m; redak++)
@@ -41,7 +41,7 @@ int main()
         for(stupac=0; stupac<n; stupac++)
         {
             /*
-             Ako su elementi ispod glavne dijagonale (col<row)
+             Ako su elementi ispod glavne dijagonale (stupac<redak)
              * 0 onda je matrica gornje trokutasta.
              */
             if(stupac<redak && A[redak][stupac]!=0)
@@ -52,7 +52,7 @@ int main()
     }
 
     /*
-     * If it is upper triangular matrix
+     * Ako je gornje trokutasta.
      */
     if(gornje==1)
     {
